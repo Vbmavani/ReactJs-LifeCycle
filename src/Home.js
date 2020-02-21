@@ -3,7 +3,7 @@ import React from 'react'
 class Home extends React.Component{
     constructor(props){
         super(props);
-        console.log('Constructor');
+        console.log('1Constructor');
         this.state={
             boolean : false,
         }
@@ -42,7 +42,7 @@ class Home extends React.Component{
       // }
 
       onchange=()=>{
-          console.log('onchange')
+          console.log('1onchange')
           this.setState({boolean : !this.state.boolean})
       }
     render () {
@@ -51,7 +51,7 @@ class Home extends React.Component{
         ) 
         return (
             <div>
-              {console.log('render')}
+              {console.log('1render')}
             <button onClick={this.onchange} >Change</button>
                 <h2 >{this.props.boolean}</h2>
 

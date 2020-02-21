@@ -6,7 +6,7 @@ import Home from'./Home'
 class App extends Component {
   constructor(){
     super();
-    console.log('Constructor');
+    console.log('----Constructor');
     this.state={
       boolean :true,
     }
@@ -37,12 +37,12 @@ class App extends Component {
   }
 
   onchange=()=>{
-    console.log('onchange')
+    console.log('-----onchange')
     this.setState({boolean : !this.state.boolean})
   }
 
   render() {
-    console.log('Render');
+    console.log('------Render');
     let c = (
       this.state.boolean ? (<h1>App page</h1>) : null
   )
